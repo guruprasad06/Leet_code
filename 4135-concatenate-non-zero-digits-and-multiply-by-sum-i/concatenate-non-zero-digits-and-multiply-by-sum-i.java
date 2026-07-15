@@ -1,8 +1,8 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        int sum=0;
-        int place=1;
-        int x=0;
+        int sum =0;
+        int place =1;
+        int x =0;
 
         while(n>0){
             int digit= n%10;
