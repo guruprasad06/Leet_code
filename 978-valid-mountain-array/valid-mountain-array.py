@@ -9,3 +9,4 @@ class Solution:
         while i<n-1 and arr[i]>arr[i+1]:
             i+=1
         return i==n-1
+        
