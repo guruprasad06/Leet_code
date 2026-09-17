@@ -10,9 +10,7 @@ class Solution:
             if i in d:
                 d[i]-=1
             else:
-                d[i]=1
-        if len(s)!=len(t):
-            return False
+                return False
         for i in d:
             if d[i]!=0:
                 return False
