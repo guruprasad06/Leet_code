@@ -3,8 +3,5 @@ class Solution:
         ans=""
         for i in s:
             if i.isalnum():
-                ans=ans+i.lower()
-        print(ans)
+                ans+=i.lower()
         return ans==ans[::-1]
-
-        
