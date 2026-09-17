@@ -3,8 +3,6 @@ class Solution:
         i=int(a,2)
         j=int(b,2)
         s=i+j
-        print(s)
         res=bin(s)
-        return (res[2:])
-
-        
+        print(res)
+        return res[2:]
