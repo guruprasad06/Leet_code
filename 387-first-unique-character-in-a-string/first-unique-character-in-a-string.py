@@ -4,7 +4,6 @@ class Solution:
         for i in s:
             j=ord(i)-97
             l[j]+=1
-        print(l)
         for i in range(len(s)):
             if l[ord(s[i])-97]==1:
                 return i
