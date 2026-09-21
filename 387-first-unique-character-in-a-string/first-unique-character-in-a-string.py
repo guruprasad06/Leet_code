@@ -1,6 +1,11 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+        l=[0]*26
+        for i in s:
+            j=ord(i)-97
+            l[j]+=1
+        print(l)
         for i in range(len(s)):
-            if s.count(s[i])==1:
+            if l[ord(s[i])-97]==1:
                 return i
         return -1
