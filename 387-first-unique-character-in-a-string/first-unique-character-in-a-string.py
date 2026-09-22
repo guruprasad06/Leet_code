@@ -1,5 +1,5 @@
-class Solution:
-    def firstUniqChar(self, s: str) -> int:
+class Solution(object):
+    def firstUniqChar(self, s):
         l=[0]*26
         for i in s:
             j=ord(i)-97
@@ -8,3 +8,4 @@ class Solution:
             if l[ord(s[i])-97]==1:
                 return i
         return -1
+        
