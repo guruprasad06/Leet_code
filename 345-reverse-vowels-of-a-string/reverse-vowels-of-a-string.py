@@ -8,6 +8,9 @@ class Solution:
                 l.append(s[i])
                 j.append(i)
         l=l[::-1]
-        for i in range(len(l)): 
+
+        for i in range(len(l)):
             s[j[i]]=l[i]
         return "".join(s)
+
+        
