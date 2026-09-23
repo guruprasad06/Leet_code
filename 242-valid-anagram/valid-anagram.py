@@ -15,5 +15,4 @@ class Solution:
             if d[i]!=0:
                 return False
         
-        else:
-            return True
+        return True
