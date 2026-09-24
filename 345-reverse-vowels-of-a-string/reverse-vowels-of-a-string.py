@@ -3,15 +3,14 @@ class Solution:
         s=list(s)
         l=[]
         j=[]
+
         for i in range(len(s)):
             if s[i] in 'aeiouAEIOU':
                 l.append(s[i])
                 j.append(i)
-        print(l)
         l=l[::-1]
         print(l)
+
         for i in range(len(l)):
             s[j[i]]=l[i]
         return "".join(s)
-            
-
