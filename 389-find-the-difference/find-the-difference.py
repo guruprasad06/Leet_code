@@ -4,8 +4,7 @@ class Solution:
         t=sorted(t)
         i=0
         j=0
-
-        while i<len(s)and j<len(t):
+        while i<len(s) and j<len(t):
             if s[i]!=t[j]:
                 return t[j]
             i+=1
