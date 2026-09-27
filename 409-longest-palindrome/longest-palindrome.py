@@ -11,7 +11,7 @@ class Solution:
         sum=0
         flag=0
 
-        for  i in d:
+        for i in d:
             if d[i]%2==0:
                 sum+=d[i]
             else:
@@ -20,3 +20,4 @@ class Solution:
         if flag==1:
             sum+=1
         return sum
+        
