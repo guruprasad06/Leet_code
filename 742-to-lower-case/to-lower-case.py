@@ -1,7 +1,7 @@
 class Solution:
     def toLowerCase(self, s: str) -> str:
-        l=s.lower()
-        print(l)
-        ans=""
-
-        return ans+l
+        l=list(s)
+        for i in range(len(l)):
+            if l[i].isupper():
+                l[i]=l[i].lower()
+        return "".join(l)
