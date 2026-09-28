@@ -5,7 +5,6 @@ class Solution:
         for i in s:
             a=l.pop(0)
             l.append(a)
-            
             if "".join(l)==goal:
                 return True
         return False
