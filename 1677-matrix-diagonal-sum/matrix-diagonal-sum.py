@@ -4,7 +4,11 @@ class Solution:
         for i in range(len(mat)):
             sum=sum+mat[i][i]
             sum=sum+mat[len(mat)-i-1][i]
-        if (len(mat)%2==0):
+        if len(mat)%2==0:
             return sum
         else:
             return sum-mat[len(mat)//2][len(mat)//2]
+
+
+    #    00 11  22
+     #   02 11  20
