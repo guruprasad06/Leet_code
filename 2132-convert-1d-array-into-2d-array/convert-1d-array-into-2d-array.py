@@ -3,7 +3,6 @@ class Solution:
         if len(original)!=m*n:
             return []
         a=[[0]*n for i in range(m)]
-
         index=0
 
         for i in range(m):
