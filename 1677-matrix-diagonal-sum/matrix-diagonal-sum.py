@@ -10,5 +10,3 @@ class Solution:
             return sum-mat[len(mat)//2][len(mat)//2]
 
 
-    #    00 11  22
-     #   02 11  20
