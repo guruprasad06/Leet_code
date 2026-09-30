@@ -1,12 +1,9 @@
 class Solution:
     def diagonalSum(self, mat: list[list[int]]) -> int:
-        # 00 11 22
-        # 02 11 20
         sum=0
-
         for i in range(len(mat)):
-            sum=sum+mat[i][i]
-            sum=sum+mat[i][len(mat)-i-1]
+            sum+=mat[i][i] #00 11 22
+            sum+=mat[i][len(mat)-i-1]  #02 11 20
         print(sum)
         if len(mat)%2==0:
             return sum
