@@ -1,10 +1,18 @@
 class Solution:
     def rotateString(self, s: str, goal: str) -> bool:
-        l=list(s)
+        # l=list(s)
 
-        for i  in s:
-            a=l.pop(0)
-            l.append(a)
-            if "".join(l)==goal:
+        # for i  in s:
+        #     a=l.pop(0)
+        #     l.append(a)
+        #     if "".join(l)==goal:
+        #         return True
+        # return False
+        a=s+s
+
+        if len(s)==len(goal):
+            if goal in a:
                 return True
+            else:
+                return False
         return False
