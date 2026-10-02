@@ -1,7 +1,6 @@
 class Solution:
     def reverseOnlyLetters(self, s: str) -> str:
         l=[]
-
         for i in s:
             if i.isalpha():
                 l.append(i)
